@@ -1,10 +1,11 @@
-const express = require('express')
-const app = express()
+const express = require('express');
+const app = express();
 
 app.get('/', (req, res) => {
-    res.send({Hi: 'there'})
-})
+    res.send({Hi: 'there'});
+});
 
 # Heroku environment variables
-const PORT = process.env.PORT
-app.listen(PORT)
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT);
