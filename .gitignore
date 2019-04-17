@@ -3,7 +3,7 @@ node_modules
 package-lock.json
 
 # Passport
-keys.js
+dev.js
 
 # Atom
 .DS_Store
