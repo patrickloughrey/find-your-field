@@ -1,0 +1,43 @@
+body {
+	font-family: 'Hind Vadodara', sans-serif;
+	background: url('./field.jpeg') no-repeat;
+	background-size: cover;
+}
+
+.nav-wrapper {
+	background: url('./field.jpeg') no-repeat;
+	background-size: cover;
+	border-bottom:none !important;
+}
+
+nav {
+	border-bottom: none;
+}
+
+ul {
+	margin: 2em;
+	background-color: none !important;
+}
+
+.left {
+	margin-left: 1em;
+	font-size: 16px;
+}
+
+li {
+	margin: 1.35em;
+	letter-spacing: .005em;
+}
+
+i {
+	margin: .75em;
+}
+
+/*nav li i.material-icons {
+	display: inline-block;
+	margin: 0em;
+	margin-left: 0.65em;
+	margin-top: -0.5em;
+}*/
+
+
