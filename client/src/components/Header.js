@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 class Header extends Component {
 
@@ -21,7 +22,7 @@ class Header extends Component {
 					<li className="hvr-underline-from-center">
 						<a href="" className="navBar"> Sign Up </a>
 					</li>
-					<li className="hvr-underline-from-center">
+					<li className="hvr-underline-from-center no-shadow">
 		 				<a href="/auth/google" className="navBar"> Login </a>
 		 			</li>
 		 		</ul>;
@@ -45,12 +46,14 @@ class Header extends Component {
 
 	render() {
 		return(
-			<nav className="z-depth-0"> 
+			<nav className="z-depth-0 animated zoomIn delay-2s"> 
 				<div className="nav-wrapper">
-					<a className="left brand-logo">
-						<i className="material-icons">spa</i>
-					</a>
-					
+					<Link 
+						to={this.props.auth ? '/dashboard' : '/'} 
+						className="left brand-logo">
+							<i className="material-icons">spa</i>
+					</Link>
+
 					{this.renderContent()}
 
 				</div>

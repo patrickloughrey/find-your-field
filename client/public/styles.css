@@ -1,6 +1,6 @@
 body {
 	/*font-family: 'Hind Vadodara', sans-serif;*/
-  font-family: 'Galdeano', serif;
+  font-family: 'Asar', serif;
   background: url('./sky.jpg') no-repeat;
   background-size: cover;
 }
@@ -38,8 +38,12 @@ i {
 }
 
 nav ul li {
-	font-size: 1.10rem;
+	font-size: 1.15rem;
   font-weight: bold;
+}
+
+li:hover {
+  box-shadow: none;
 }
 
 /* Underline From Center */
@@ -60,7 +64,7 @@ nav ul li {
   right: 51%;
   bottom: 0;
   background: #F0F0F0;
-  height: 4px;
+  height: 3px;
   -webkit-transition-property: left, right;
   transition-property: left, right;
   -webkit-transition-duration: 0.3s;
@@ -77,15 +81,15 @@ nav ul li {
 	cursor:pointer;
 }
 
+
 nav a i.material-icons {
 	font-size: 2.15rem;
 }
 
-
 .navBar:hover {
   text-decoration: none;
   color: #F0F0F0;
-  box-shadow: none;
+  background-color: transparent;
 }
 
 .jumbotron {
@@ -94,16 +98,44 @@ nav a i.material-icons {
 }
 
 h4 {
-  margin-top: 2em;
+  margin-top: 3em;
+  font-weight: bolder;
+}
+
+.lead {
+  font-size: 22px;
+  margin-top: 1.5em;
+  font-weight: bold;
+  text-shadow: 0.75px 0.75px black;
+}
+
+.second {
+  font-size: 20px;
+  margin-top: -0.5em;
+  text-shadow: 0.75px 0.75px black;
 }
 
 .btn-large {
   border-radius: 8px;
   background-color:#FF5A5F;
-  margin-top: 2em;
+  margin-top: 2.5em;
 }
 
 .btn-large:hover {
-  background-color: black;
+  background-color: #1a1e23;
+}
+
+.no-shadow:hover {
+  box-shadow: none;
+}
+
+.col-12 {
+  margin-top: 10em;
+}
+
+.col-12 a i.material-icons {
+  font-size: 3.5rem;
+  animation-duration: 1.25s;
+  animation-iteration-count: 5;
 }
 
