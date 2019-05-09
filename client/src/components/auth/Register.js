@@ -1,0 +1,48 @@
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+
+class Register extends Component {
+
+  constructor() {
+    super();
+    this.state = {
+      name: "",
+      email: "",
+      password: "",
+      password2: "",
+      errors: {}
+    };
+  }
+
+  onChange = e => {
+      this.setState({ [e.target.id]: e.target.value });
+  };
+
+  onSubmit = e => {
+      e.preventDefault();
+
+      const newUser = {
+        name: this.state.name,
+        email: this.state.email,
+        password: this.state.password,
+        confirmPassword: this.state.confirmPassword
+      };
+
+      console.log(newUser);
+  };
+
+  render() {
+      const { errors } = this.state;
+      return (
+        <div className="modal fade" id="elegantModalForm" tabIndex="-1" role="dialog" aria-labelledby="myModalLabel"
+          aria-hidden="true">
+           
+        </div>
+
+      );
+
+  }
+
+}
+
+export default Register;

@@ -1,12 +1,12 @@
 import React from 'react';
 
-const Landing = () => {
+const About = () => {
 	return(
-		<div className="jumbotron jumbotron-fluid">
+		<div className="jumbotron jumbotron-fluid about">
   			<h4 className="display-4 animated zoomIn">Find the perfect field for your team.</h4>
   			<p className="lead animated zoomIn delay-1s">Choose a date, reserve a field, make a payment & book your practice!</p>
   			<p className="second animated zoomIn delay-2s"> Save your team's favorites so you have easy access to them. </p>
-  			<a class="waves-effect waves-light btn-large animated zoomIn delay-2s">Sign Up</a>
+  			<a className="waves-effect waves-light btn-large animated zoomIn delay-2s">Sign Up</a>
   			<div className="container">
   				<div className="row">
   					<div className="col-12">
@@ -17,7 +17,9 @@ const Landing = () => {
 				</div>
 			</div>
 		</div>
+
+
 	);
 };
 
-export default Landing;
+export default About;
