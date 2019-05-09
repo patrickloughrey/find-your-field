@@ -4,7 +4,7 @@ body {
 }
 
 .jumbotron-fluid {
-  background: url('./sky.jpg') no-repeat;
+  background: url('./field.jpg') no-repeat;
   background-size: cover;
   color: #F0F0F0;
 }
@@ -153,4 +153,17 @@ h4 {
 /*************************************/
 .about {
   background: white;
+  padding-top: 4em;
+  padding-bottom: 6em;
 }
+
+.card {
+  border: none;
+  margin: 8em;
+}
+
+.card-title {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+

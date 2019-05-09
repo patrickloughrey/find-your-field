@@ -2,22 +2,33 @@ import React from 'react';
 
 const About = () => {
 	return(
-		<div className="jumbotron jumbotron-fluid about">
-  			<h4 className="display-4 animated zoomIn">Find the perfect field for your team.</h4>
-  			<p className="lead animated zoomIn delay-1s">Choose a date, reserve a field, make a payment & book your practice!</p>
-  			<p className="second animated zoomIn delay-2s"> Save your team's favorites so you have easy access to them. </p>
-  			<a className="waves-effect waves-light btn-large animated zoomIn delay-2s">Sign Up</a>
-  			<div className="container">
-  				<div className="row">
-  					<div className="col-12">
-		  				<a className="center brand-logo">
-							<i className="material-icons arrow animated infinite bounce delay-2s">keyboard_arrow_down</i>
-						</a>
-					</div>
+		<div className="container about">
+			<div className="row">
+				<div className="card-deck">
+				  <div className="card text-center">
+					    <i className="icofont-baseballer icofont-4x"></i>
+					    <div className="card-body">
+					      <h5 className="card-title">Card title</h5>
+					      <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+					    </div>
+				  </div>
+				  <div className="card text-center">
+					    <i className="icofont-field icofont-4x"></i>
+					    <div className="card-body">
+					      <h5 className="card-title">Card title</h5>
+					      <p className="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+					    </div>
+				  </div>
+				  <div className="card text-center">
+					    <i className="icofont-kick icofont-4x"></i>
+					    <div className="card-body">
+					      <h5 className="card-title">Card title</h5>
+					      <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+					    </div>
+				  </div>
 				</div>
 			</div>
 		</div>
-
 
 	);
 };
