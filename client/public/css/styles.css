@@ -1,5 +1,4 @@
 body {
-	/* font-family: 'Hind Vadodara', sans-serif; */
   font-family: 'Asar', serif;
 }
 
@@ -132,6 +131,9 @@ h4 {
 
 .btn-large:hover {
   background-color: #1a1e23;
+  color: white;
+  box-shadow: 5px;
+  text-decoration: none;
 }
 
 .no-shadow:hover {
@@ -149,7 +151,46 @@ h4 {
 }
 
 /*************************************/
-/*              ABOUT                */
+/*          Login & Sign Up          */
+/*************************************/
+.modal {
+  background-color: white;
+  position: fixed;
+  max-height: 100%;
+  width: 100%;
+}
+
+.modal-content {
+  border: none;
+  margin-top: 10em;
+}
+
+.exit {
+  margin-bottom: 2em;
+}
+
+.btn-flat i {
+  line-height: 0.15;
+  margin-top: 1em;
+  font-size: 1.25rem;
+}
+
+i.material-icons {
+  margin-top: 1em;
+}
+
+.log {
+  color: #FF5A5F;
+}
+
+.log:hover {
+  text-decoration: none;
+  color: black;
+}
+
+
+/*************************************/
+/*              About                */
 /*************************************/
 .about {
   background: white;
@@ -159,7 +200,10 @@ h4 {
 
 .card {
   border: none;
-  margin: 8em;
+  box-shadow: none;
+  margin-top: 8em;
+  margin-left: 4em;
+  margin-right: 4em;
 }
 
 .card-title {

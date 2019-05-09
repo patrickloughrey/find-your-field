@@ -20,7 +20,7 @@ class Header extends Component {
 						<a href="" className="navBar"> About </a>
 					</li>
 					<li className="hvr-underline-from-center">
-						<a href="" className="navBar"> Sign Up </a>
+						<a href="/register" className="navBar"> Sign Up </a>
 					</li>
 					<li className="hvr-underline-from-center no-shadow">
 		 				<a href="/auth/google" className="navBar"> Login </a>
@@ -62,7 +62,7 @@ class Header extends Component {
 	  			<h4 className="display-4 animated zoomIn">Find the perfect field for your team.</h4>
 	  			<p className="lead animated zoomIn delay-1s">Choose a date, reserve a field, make a payment & book your practice!</p>
 	  			<p className="second animated zoomIn delay-2s"> Save your team's favorites so you have easy access to them. </p>
-	  			<a className="waves-effect waves-light btn-large animated zoomIn delay-2s">Sign Up</a>
+	  			<a href="/register" className="waves-effect waves-light btn-large animated zoomIn delay-2s">Sign Up</a>
 	  			<div className="container">
 	  				<div className="row">
 	  					<div className="col-12">
