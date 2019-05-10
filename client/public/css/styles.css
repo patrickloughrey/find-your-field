@@ -142,6 +142,7 @@ h4 {
 
 .col-12 {
   margin-top: 10em;
+  margin-bottom: 3em;
 }
 
 .col-12 a i.material-icons {
@@ -162,7 +163,19 @@ h4 {
 
 .modal-content {
   border: none;
-  margin-top: 10em;
+  margin-top: 6em;
+}
+
+h3 {
+  text-align: center;
+}
+
+.grey-text {
+  text-align: center;
+}
+
+form {
+  margin-top: 2em;
 }
 
 .exit {
@@ -173,6 +186,7 @@ h4 {
   line-height: 0.15;
   margin-top: 1em;
   font-size: 1.25rem;
+  text-align: center;
 }
 
 i.material-icons {
@@ -188,6 +202,20 @@ i.material-icons {
   color: black;
 }
 
+.login {
+  margin-top: 10em;
+}
+
+.submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.google {
+  margin-top: 2em;
+}
 
 /*************************************/
 /*              About                */

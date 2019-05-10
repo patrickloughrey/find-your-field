@@ -43,9 +43,9 @@ class Register extends Component {
                   home
                 </Link>
                 <div className="col s12" style={{ paddingLeft: "11.250px" }}>
-                  <h4>
-                    <b>Register</b> below
-                  </h4>
+                  <h3>
+                    <b>Sign</b> Up
+                  </h3>
                   <p className="grey-text text-darken-1">
                     Already have an account? <Link to="/login" className="log">Log in</Link>
                   </p>
@@ -91,7 +91,7 @@ class Register extends Component {
                     />
                     <label htmlFor="password2">Confirm Password</label>
                   </div>
-                  <div className="col s12" style={{ paddingLeft: "11.250px" }}>
+                  <div className="col s12 submit" style={{ paddingLeft: "11.250px" }}>
                     <button
                       style={{
                         width: "150px",
@@ -100,11 +100,18 @@ class Register extends Component {
                         marginTop: "1rem"
                       }}
                       type="submit"
-                      className="btn btn-large waves-effect waves-light hoverable accent-3"
+                      className="btn btn-large waves-effect waves-light hoverable accent-3 register-btn"
                     >
                       Sign up
                     </button>
                   </div>
+                  <p className="grey-text text-darken-1 google">
+                      Or Sign Up With: 
+                    <hr />
+                    <Link to="/auth/google" className="log">
+                      <img src="https://img.icons8.com/color/48/000000/google-logo.png"/>
+                    </Link>
+                  </p>
                 </form>
               </div>
             </div>
