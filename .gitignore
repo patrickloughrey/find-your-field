@@ -10,5 +10,7 @@ dev.js
 
 # Create React App
 *.ico
-*.json
+package.json
+package-lock.json
+manifest.json
 *.svg
