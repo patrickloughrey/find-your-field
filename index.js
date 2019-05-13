@@ -33,6 +33,17 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 
+if(process.env.NODE_ENV == 'production') {
+	/* Express will handle any production requests by serving up Build files */
+	app.use(express.static('client/build'));
+
+	/* If Express does not know the route requested, it will serve up HTML and handle it from there */
+	const path = require('path');
+	app.get('*', (req, res) => {
+		res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+	});
+}
+
 require("./services/passport")(passport);
 
 /* Pass Express app to Passport routes */
