@@ -1,0 +1,16 @@
+# Node
+node_modules
+package-lock.json
+
+# Passport
+dev.js
+
+# Atom
+.DS_Store
+
+# Create React App
+*.ico
+package.json
+package-lock.json
+manifest.json
+*.svg
