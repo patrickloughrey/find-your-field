@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import { connect } from 'react-redux';
 
 class Register extends Component {
 
@@ -108,9 +109,7 @@ class Register extends Component {
                   <p className="grey-text text-darken-1 google">
                       Or Sign Up With: 
                     <hr />
-                    <Link to="/auth/google" className="log">
-                      <img src="https://img.icons8.com/color/48/000000/google-logo.png"/>
-                    </Link>
+                    <a href="/auth/google" className="log"> <img src="https://img.icons8.com/color/48/000000/google-logo.png"/> </a>
                   </p>
                 </form>
               </div>
@@ -123,4 +122,8 @@ class Register extends Component {
 
 }
 
-export default Register;
+function mapStateToProps(state) {
+  return { auth: state.auth };
+}
+
+export default connect(mapStateToProps)(Register);

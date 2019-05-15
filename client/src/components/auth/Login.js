@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import { connect } from 'react-redux';
 
 class Login extends Component {
   constructor() {
@@ -83,9 +84,7 @@ render() {
                   <p className="grey-text text-darken-1 google">
                       Or Sign Up With:
                     <hr />
-                    <Link to="/auth/google" className="log">
-                      <img src="https://img.icons8.com/color/48/000000/google-logo.png"/>
-                    </Link>
+                    <a href="/auth/google" className="log"> <img src="https://img.icons8.com/color/48/000000/google-logo.png"/> </a>
                   </p>
                 </form>
               </div>
@@ -98,4 +97,8 @@ render() {
 
 }
 
-export default Login;
+function mapStateToProps(state) {
+  return { auth: state.auth };
+}
+
+export default connect(mapStateToProps)(Login);

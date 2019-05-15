@@ -52,7 +52,7 @@ class Header extends Component {
 						<Link 
 							to={this.props.auth ? '/dashboard' : '/'} 
 							className="left brand-logo">
-								<i className="material-icons">spa</i>
+								<i className="material-icons home">spa</i>
 						</Link>
 
 						{this.renderContent()}
