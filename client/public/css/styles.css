@@ -302,5 +302,43 @@ h3 {
 }
 
 .subscribe-row {
-  padding-bottom: 6em;
+  padding-bottom: 2em;
+}
+
+.information {
+  background: inherit;
+  border-top: 1px solid gray;
+  width: 100%;
+}
+
+.footer-li {
+  display: inline-block;
+  color: gray;
+}
+
+.info {
+  margin-right: 2em;
+  margin-left: 2em;
+}
+
+.info:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-ul {
+  text-align: center;
+}
+
+.material-icons {
+  font-size: 2.15rem;
+}
+
+.footer-link {
+  color: gray;
+}
+
+.footer-link:hover {
+  color: white;
+  text-decoration: none;
 }

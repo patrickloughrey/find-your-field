@@ -16,6 +16,28 @@ const Footer = () => {
 					</div>
 				</div>
 			</div>
+			<div className="jumbotron information">
+				<div className="row justify-content-between align-items-center">
+					<div className="col-md-5 text-md-left">
+						<ul className="left footer-ul">
+							<a href="/" className="footer-link"> <li className="footer-li info"> Contact </li> </a>
+							<a href="/" className="footer-link"> <li className="footer-li info"> About Us </li> </a>
+							<a href="/" className="footer-link"> <li className="footer-li info"> Legal </li> </a>
+						</ul>
+					</div>
+					<div className="col-md-2">
+						<i className="material-icons home">spa</i>
+					</div>
+					<div className="col-md-5 text-md-right">
+						<ul className="right footer-ul">
+							<li className="footer-li"> <a href="/" className="footer-link"> <i className="icofont-facebook icofont-2x"></i> </a> </li>
+						    <li className="footer-li"> <a href="/" className="footer-link"> <i className="icofont-instagram icofont-2x"></i> </a> </li>
+							<li className="footer-li"> <a href="/" className="footer-link"> <i className="icofont-twitter icofont-2x"></i> </a> </li> 
+							<li className="footer-li"> <a href="/" className="footer-link"> <i className="icofont-linkedin icofont-2x"></i> </a> </li> 
+						</ul>
+					</div>
+				</div>
+			</div>
 		</footer>
 	)
 }
