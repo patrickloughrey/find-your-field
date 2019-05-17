@@ -23,7 +23,7 @@ class Header extends Component {
 						<a href="/register" className="navBar"> Sign Up </a>
 					</li>
 					<li className="hvr-underline-from-center no-shadow">
-		 				<a href="/auth/google" className="navBar"> Login </a>
+		 				<a href="/login" className="navBar"> Login </a>
 		 			</li>
 		 		</ul>;
 		 	default:

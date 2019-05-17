@@ -126,7 +126,7 @@ h4 {
 
 .btn-large {
   border-radius: 8px;
-  background-color:#FF5A5F;
+  background-color:#e83422;
   margin-top: 2.5em;
 }
 
@@ -225,14 +225,17 @@ i.material-icons {
   background: white;
   padding-top: 4em;
   padding-bottom: 6em;
+  margin-bottom: 6em;
 }
 
 .card {
   border: none;
   box-shadow: none;
   margin-top: 8em;
-  margin-left: 4em;
-  margin-right: 4em;
+  margin-left: 8em;
+  margin-right: 8em;
+  padding-right: 2em;
+  padding-left: 2em;
 }
 
 .card-title {
@@ -240,3 +243,64 @@ i.material-icons {
   margin-bottom: 1em;
 }
 
+.icofont-field, .icofont-team, .icofont-kick {
+  color: #e83422;
+  box-shadow: 2px black;
+}
+
+.card-text {
+  font-size: 16px;
+}
+
+
+/*************************************/
+/*              Footer               */
+/*************************************/
+footer {
+  background-color: #1c1c1c;
+}
+
+h3 {
+  margin-top: 3em;
+}
+
+.subscribe {
+  margin-bottom: 6em;
+  margin-left: 2em;
+}
+
+.subscribe-btn {
+  background-color: #fff;
+  color: black;
+  border-radius: 10rem;
+  font-size: 1.15rem;
+  text-transform: none;
+  height: 60px;
+  width: 85%;
+  font-weight: lighter;
+}
+
+.subscribe-btn:hover {
+  background-color: #dddddd;
+}
+
+#exampleInputEmail1 {
+  background: #383737;
+  border-radius: 10rem;
+  padding-left: 2rem;
+  padding-top: 0.45rem;
+  padding-bottom: 0.45rem;
+  border: none;
+  font-family: inherit;
+  font-size: 1.15rem;
+  color: white;
+}
+
+#exampleInputEmail1:focus {
+  background: white;
+  color: black;
+}
+
+.subscribe-row {
+  padding-bottom: 6em;
+}

@@ -5,6 +5,7 @@ import * as actions from '../actions';
 
 import Header from './Header';
 import About from './About';
+import Footer from './Footer';
 import Register from './auth/Register';
 import Login from './auth/Login';
 
@@ -23,6 +24,7 @@ class App extends Component {
 					<div>
 						<Header />
 						<Route exact path="/" component={About} />
+						<Route exact path="/" component={Footer} />
 						<Route exact path="/register" component={Register} />
 						<Route exact path="/login" component={Login} />
 						<Route exact path="/dashboard" component={Dashboard} />
