@@ -4,12 +4,14 @@ import { connect } from 'react-redux';
 import * as actions from '../actions';
 
 import Header from './Header';
+import Statistics from './Statistics';
 import About from './About';
 import Footer from './Footer';
+
 import Register from './auth/Register';
 import Login from './auth/Login';
 
-const Dashboard = () => <h2> Dashboard </h2>;
+import Dashboard from './Dashboard';
 
 
 class App extends Component {
@@ -23,6 +25,7 @@ class App extends Component {
 				<BrowserRouter>
 					<div>
 						<Header />
+						<Route exact path="/" component={Statistics} />
 						<Route exact path="/" component={About} />
 						<Route exact path="/" component={Footer} />
 						<Route exact path="/register" component={Register} />

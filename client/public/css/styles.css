@@ -3,7 +3,10 @@ body {
 }
 
 .jumbotron-fluid {
-  background: url('./field.jpg') no-repeat;
+  /*background: url('./field.jpg') no-repeat; */
+  /*background: url('./net.jpg') no-repeat center;*/ 
+  background: url('./football.jpg') no-repeat center;
+  /*background: url('./city.jpg') no-repeat center;*/
   background-size: cover;
   color: #F0F0F0;
 }
@@ -107,7 +110,7 @@ nav .brand-logo {
 }
 
 h4 {
-  margin-top: 4.5em;
+  margin-top: 5em;
   font-weight: bolder;
 }
 
@@ -126,8 +129,8 @@ h4 {
 
 .btn-large {
   border-radius: 8px;
-  background-color:#e83422;
-  margin-top: 2.5em;
+  background-color:#D80000;
+  margin-top: 3em;
 }
 
 .btn-large:hover {
@@ -219,16 +222,198 @@ i.material-icons {
 }
 
 /*************************************/
+/*            Statistics             */
+/*************************************/
+.stats {
+  background: #F0F0F0;
+  padding-top: 4em;
+  padding-bottom: 6em;
+  margin-bottom: 6em;
+  /*border-bottom-left-radius: 90% 12%;
+  border-bottom-right-radius: 90% 12%;*/
+}
+
+.row-stats {
+  width: 100%;
+  margin-top: 10em;
+  display: flex;
+  justify-content: center;
+}
+
+.basketball {
+  justify-content: flex-start;
+}
+
+.soccer {
+  justify-content: flex-end;
+}
+
+.baseball {
+  justify-content: flex-start;
+}
+
+.col-stats {
+  display: flex;
+  justify-content: center;
+}
+
+.card-img-top {
+  width:100%;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.shadow {
+  box-shadow: 0 0 1rem rgba(0,0,0,0.15);
+  height: 42rem;
+  border-radius: 0.5rem;
+  width: 25rem;
+}
+
+.shadow:hover {
+  cursor: pointer;
+}
+
+.stat-header {
+  margin-left: 6rem;
+  /*color: black;*/
+  color: #404040;
+  font-size: 30px;
+  margin-top: 8rem;
+  letter-spacing: 0.15rem;
+  text-align: left;
+}
+
+.stat-body {
+  color: #707070;
+  text-align: left;
+  margin-left: 6rem;
+  line-height: 1.65em;
+  font-size: 18px;
+}
+
+.soccer-card {
+  margin-left: 6rem;
+}
+
+.basketball-tag {
+  color: #4d94ff;
+  font-weight: bolder;
+}
+
+.soccer-tag {
+  color: green;
+  font-weight: bolder;
+}
+
+.baseball-tag {
+  color: #A80000;
+  font-weight: bolder;
+}
+
+.title {
+  text-align: left;
+  line-height: 1.65em;
+  font-size: 24px;
+  color: black;
+}
+
+.text, .body {
+  text-align: left;
+  line-height: 1.65em;
+  font-size: 18px;
+  color: #404040;
+}
+
+.soccer, .basketball, .baseball {
+  animation-duration: 2s;
+}
+
+/* Grow Shadow */
+.hvr-grow-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+.hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.icofont-check-circled {
+  font-size: 1.5rem;
+  display: block;
+  margin-top: 1.5em;
+}
+
+.col-check {
+  margin-left: 4.5em;
+  margin-top: 3em;
+}
+
+.basketball-check {
+  color: #4d94ff;
+}
+
+.baseball-check {
+  color: #A80000;
+}
+
+.soccer-check {
+  color: green;
+}
+
+.form-label-group {
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 2em;
+}
+
+.form-control {
+  font-family: 'Asar', serif;
+}
+
+.form-control-basketball:focus {
+  border-color: #4d94ff !important;
+}
+
+.form-control-soccer:focus {
+  border-color: green !important;
+}
+
+.form-control-baseball:focus {
+  border-color: red !important;
+}
+
+/*************************************/
 /*              About                */
 /*************************************/
 .about {
   background: white;
-  padding-top: 4em;
+  padding-top: 1em;
   padding-bottom: 6em;
   margin-bottom: 6em;
 }
 
-.card {
+.about-row {
+  margin-top: 0em;
+}
+
+.about-title {
+  color: #e83422;
+}
+
+.card-about {
   border: none;
   box-shadow: none;
   margin-top: 8em;
@@ -243,13 +428,17 @@ i.material-icons {
   margin-bottom: 1em;
 }
 
-.icofont-field, .icofont-team, .icofont-kick {
+.icofont-field, .icofont-team, .icofont-kick, .icofont-company, .icofont-offside, .icofont-email {
   color: #e83422;
   box-shadow: 2px black;
 }
 
-.card-text {
+.card .card-body .card-text {
   font-size: 16px;
+}
+
+.bold {
+  font-weight: bolder;
 }
 
 
@@ -257,7 +446,8 @@ i.material-icons {
 /*              Footer               */
 /*************************************/
 footer {
-  background-color: #1c1c1c;
+  /*background-color: #1c1c1c;*/
+  background-color: #A80000;
 }
 
 h3 {
@@ -285,7 +475,7 @@ h3 {
 }
 
 #exampleInputEmail1 {
-  background: #383737;
+  background: white;
   border-radius: 10rem;
   padding-left: 2rem;
   padding-top: 0.45rem;
@@ -293,11 +483,11 @@ h3 {
   border: none;
   font-family: inherit;
   font-size: 1.15rem;
-  color: white;
+  color: black;
 }
 
 #exampleInputEmail1:focus {
-  background: white;
+  background: #dddddd;
   color: black;
 }
 
@@ -307,13 +497,13 @@ h3 {
 
 .information {
   background: inherit;
-  border-top: 1px solid gray;
+  border-top: 1px solid white;
   width: 100%;
 }
 
 .footer-li {
   display: inline-block;
-  color: gray;
+  color: white;
 }
 
 .info {
@@ -322,7 +512,7 @@ h3 {
 }
 
 .info:hover {
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
@@ -335,10 +525,22 @@ h3 {
 }
 
 .footer-link {
-  color: gray;
+  color: white;
 }
 
 .footer-link:hover {
-  color: white;
+  color: black;
   text-decoration: none;
+}
+
+/*************************************/
+/*             Dashboard             */
+/*************************************/
+
+.dashboard {
+  background-color: white;
+  position: fixed;
+  max-height: 100%;
+  width: 100%;
+  margin: 0 auto;
 }
