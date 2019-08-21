@@ -18,15 +18,16 @@ const Statistics = () => {
 					    	</div>
 					    	<div className="form-label-group">
 					    		<input type="text" className="form-control form-control-basketball" placeholder="Email" />
-					    	</div>	
+					    	</div>
 					    	<div className="form-label-group">
 					    		<input type="text" className="form-control form-control-basketball" placeholder="Team" />
-					    	</div>		
+					    	</div>
+					    	<a href="/" className="btn-large btn-coach">Start Today</a>
 					    </div>
 					</div>
 					<div className="col-md-4">
 						<h1 className="stat-header"> The most useful system ever created for <span className="basketball-tag"> coaches. </span> </h1>
-						<p className="stat-body"> Using our system to book practice reservations saves time, money, & gives  
+						<p className="stat-body"> Using our system to book practice reservations saves time, money, & gives
 							coaches more time to plan practice. </p>
 						<div className="col-md-4 col-check">
 							<i className="icofont-check-circled basketball-check"> Reserve Practice Facilities </i>
@@ -58,8 +59,9 @@ const Statistics = () => {
 					    		<input type="text" className="form-control form-control-soccer" placeholder="Email" />
 					    	</div>	
 					    	<div className="form-label-group">
-					    		<input type="text" className="form-control form-control-soccer" placeholder="Team" />
-					    	</div>		
+					    		<input type="text" className="form-control form-control-soccer" placeholder="Facility" />
+					    	</div>
+					    	<a href="/" className="btn-large btn-host">Become a Host</a>
 					    </div>
 					</div>
 				</div>
@@ -74,15 +76,16 @@ const Statistics = () => {
 					    	</div>
 					    	<div className="form-label-group">
 					    		<input type="text" className="form-control form-control-baseball" placeholder="Email" />
-					    	</div>	
+					    	</div>
 					    	<div className="form-label-group">
 					    		<input type="text" className="form-control form-control-baseball" placeholder="Team" />
-					    	</div>		
+					    	</div>
+					    	<a href="/" className="btn-large btn-team">Create a Profile</a>
 					    </div>
 					</div>
 					<div className="col-md-4">
 						<h1 className="stat-header"> The most useful system ever created for <span className="baseball-tag"> teams. </span> </h1>
-						<p className="stat-body"> Teams can create a team profile page, automate practice updates if a practice needs to be cancelled, and 
+						<p className="stat-body"> Teams can create a team profile page, automate practice updates if a practice needs to be cancelled, and
 								save their favorite fields for easier access to reservations & payment. </p>
 						<div className="col-md-4 col-check">
 							<i className="icofont-check-circled baseball-check"> Save Your Teams' Favorite Fields </i>

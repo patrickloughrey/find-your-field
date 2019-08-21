@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { connect } from 'react-redux';
 import * as actions from '../actions';
 
@@ -11,7 +11,7 @@ import Footer from './Footer';
 import Register from './auth/Register';
 import Login from './auth/Login';
 
-import Dashboard from './Dashboard';
+import Dashboard from './dashboard/Dashboard';
 
 
 class App extends Component {
@@ -24,13 +24,15 @@ class App extends Component {
 			<div>
 				<BrowserRouter>
 					<div>
-						<Header />
-						<Route exact path="/" component={Statistics} />
-						<Route exact path="/" component={About} />
-						<Route exact path="/" component={Footer} />
-						<Route exact path="/register" component={Register} />
-						<Route exact path="/login" component={Login} />
-						<Route exact path="/dashboard" component={Dashboard} />
+							<Header />
+							<Route exact path="/" component={Statistics} />
+							<Route exact path="/" component={About} />
+							<Route exact path="/" component={Footer} />
+							<Switch>
+								<Route exact path="/register" component={Register} />
+								<Route exact path="/login" component={Login} />
+								<Route exact path="/dashboard" component={Dashboard} />
+							</Switch>
 					</div>
 				</BrowserRouter>
 			</div>

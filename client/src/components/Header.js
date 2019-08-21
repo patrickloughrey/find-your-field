@@ -48,15 +48,31 @@ class Header extends Component {
 	render() {
 		return(
 			<div className="jumbotron jumbotron-fluid header">
-				<nav className="z-depth-0 animated zoomIn delay-2s"> 
+				<nav className="z-depth-0 animated zoomIn delay-2s">
 					<div className="nav-wrapper">
-						<Link 
-							to={this.props.auth ? '/dashboard' : '/'} 
+						<Link
+							to={this.props.auth ? '/dashboard' : '/'}
 							className="left brand-logo">
 								<i className="material-icons home">spa</i>
 						</Link>
-
-						{this.renderContent()}
+						
+						<ul className="right">
+				 			<li className="hvr-underline-from-center">
+								<a href="" className="navBar"> Host a Field </a>
+							</li>
+							<li className="hvr-underline-from-center">
+								<a href="" className="navBar"> Find a Field </a>
+							</li>
+							<li className="hvr-underline-from-center">
+								<a href="" className="navBar"> About </a>
+							</li>
+							<li className="hvr-underline-from-center">
+								<a href="/register" className="navBar"> Sign Up </a>
+							</li>
+							<li className="hvr-underline-from-center no-shadow">
+				 				<a href="/login" className="navBar"> Login </a>
+				 			</li>
+				 		</ul>
 
 					</div>
 				</nav>

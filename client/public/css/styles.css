@@ -268,7 +268,7 @@ i.material-icons {
 
 .shadow {
   box-shadow: 0 0 1rem rgba(0,0,0,0.15);
-  height: 42rem;
+  height: 46rem;
   border-radius: 0.5rem;
   width: 25rem;
 }
@@ -393,6 +393,25 @@ i.material-icons {
 
 .form-control-baseball:focus {
   border-color: red !important;
+}
+
+.btn-coach {
+  background-color: #4d94ff;
+}
+
+.btn-host {
+  background-color: green;
+}
+
+.btn-team {
+  background-color: #A80000;
+}
+
+.btn-coach, .btn-host, .btn-team {
+  padding-left: 5em;
+  padding-right: 5em;
+  color: white;
+  margin-left: 2.25em;
 }
 
 /*************************************/
